@@ -1,0 +1,15 @@
+cc_binary(
+    name = "contents",
+    srcs = [
+        "main.cc",
+    ],
+    deps = ["@contents//:a"]
+)
+
+cc_binary(
+    name = "file",
+    srcs = [
+        "main.cc",
+    ],
+    deps = ["@file//:a"]
+)
